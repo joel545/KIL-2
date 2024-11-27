@@ -45,5 +45,10 @@ elif QT < 30 :
 YN = input("是否要印出 九九乘法表 (Y/y)：")
 if YN =='Y' or YN =='y' :
     print ("九九乘法表如下↓")
+    for i in range(1,10):
+        for j in range(1,10):
+            k=i * j
+            print("%d * %d = %2d" %(i,j,k), end="   ")
+        print()    
 else : 
     print ("謝謝，下次再來。")
